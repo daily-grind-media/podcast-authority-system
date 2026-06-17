@@ -314,7 +314,7 @@ strong{color:rgba(255,255,255,.9);font-weight:600;}
   <div class="nav-group-label">Discovery</div>
   <a href="#s2" class="nav-item" onclick="openAcc('s2')"><span class="nav-number">01</span>Discovery Form</a>
   <a href="#s3" class="nav-item" onclick="openAcc('s3')"><span class="nav-number">02</span>Discovery Analysis</a>
-  <a href="#s3" class="nav-item" onclick="openAcc('s3')"><span class="nav-number">03</span>Research</a>
+  <a href="#s-research" class="nav-item" onclick="openAcc('s-research')"><span class="nav-number">03</span>Perplexity Research</a>
   <a href="#s4" class="nav-item" onclick="openAcc('s4')"><span class="nav-number">04</span>Authority Strategy</a>
   <div class="nav-group-label">Pre-Production</div>
   <a href="#s5" class="nav-item" onclick="openAcc('s5')"><span class="nav-number">05</span>Podcast Structure</a>
@@ -562,34 +562,41 @@ Daily Grind Media</div>
   <div class="prompt-box">
     <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Discovery Analysis</div>
     <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">You are a marketing strategist and content analyst for Daily Grind Media, a premium content production agency.
+    <div class="prompt-text">You are the lead marketing strategist for Daily Grind Media, a premium content production and authority-building agency.
 
-I am going to paste a completed client discovery form below. 
+I am pasting a completed client discovery form below. Read it carefully. Every subsequent prompt in this conversation will build from what you generate here — do not request this information again.
 
-Analyze it and produce the following outputs in this exact order:
+Produce the following outputs in this exact order:
 
 1. DISCOVERY SUMMARY
-A 3–5 sentence overview of who this person is, what they do, and what they need.
+3–5 sentences. Who this person is, what they do, who they serve, and why they hired DGM.
 
 2. IDEAL CLIENT PROFILE
-Describe their dream client in detail — demographics, psychographics, pain points, desires, fears, and transformation sought.
+Full breakdown: demographics, profession, income level, life stage. Psychographics: what they believe, what they fear, what they desire, how they make decisions. Write in the exact language their audience uses.
 
 3. CORE OFFER SUMMARY
-Summarize their primary offer clearly. What is it, who is it for, what result does it produce, and how is it delivered?
+What they sell, who it's for, how it's delivered, what result it produces, and what makes it different from alternatives in the market.
 
-4. CONTENT OPPORTUNITIES
-List 10 specific content topics this person could create based on their expertise, stories, and client results.
+4. AUTHORITY POSITIONING
+How should this person be perceived in their market? Write their clearest one-sentence positioning statement. What space do they own that no one else can claim?
 
-5. LEAD MAGNET IDEAS
-Suggest 5 lead magnets this person could create. For each: title, format (checklist, guide, ebook), and why it would convert.
+5. BRAND VOICE
+5 adjectives that define their voice. What they should never sound like. Vocabulary they own. Vocabulary to avoid.
 
-6. PODCAST EPISODE ROADMAP
-Suggest the first 6 podcast episode titles for this client based on their expertise.
+6. CONTENT OPPORTUNITIES
+10 specific content topics with angles — not just titles. For each, note why it would resonate with this specific audience.
 
-7. POSITIONING GAPS
-Identify 2–3 things missing from their current positioning that we should address in the podcast content.
+7. LEAD MAGNET IDEAS
+5 ideas. For each: title, format, and why it converts for this specific audience.
 
-Paste the discovery responses below:
+8. PODCAST EPISODE ROADMAP
+First 6 podcast episode titles in priority order. For each, one sentence on what it accomplishes strategically.
+
+9. POSITIONING GAPS
+2–3 things currently missing from their positioning that podcast content should directly address.
+
+10. STRATEGIC NOTES
+Anything else critical to this project that wasn't explicitly asked for.
 
 [PASTE DISCOVERY FORM RESPONSES HERE]</div>
   </div>
@@ -623,99 +630,173 @@ Paste the discovery responses below:
   <div class="acc-header" onclick="toggleAcc('s3')">
     <div class="acc-left">
       <div class="acc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-      <div class="acc-meta"><div class="acc-num">02</div><div class="acc-title">Discovery Analysis Engine</div><div class="acc-sub">Convert raw discovery responses into complete positioning strategy</div></div>
+      <div class="acc-meta"><div class="acc-num">02</div><div class="acc-title">Discovery Analysis</div><div class="acc-sub">One master prompt generates the complete strategic foundation — run once, never repeat</div></div>
     </div>
     <div class="acc-right"><span class="acc-badge acc-badge-core">Core</span><div class="acc-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></div>
   </div>
   <div class="acc-body">
+    <div class="highlight">Run this prompt immediately after pasting the completed Discovery Form. This single prompt generates the complete strategic foundation. Every prompt that follows in this conversation builds from this output — never re-enter discovery information again.</div>
+
     <div class="label-copper">AI Tool Breakdown</div>
   <table class="dgm-table">
     <thead><tr><th>Tool</th><th>Best At</th><th>When to Use</th><th>Why Preferred</th></tr></thead>
     <tbody>
       <tr><td><strong>Claude</strong></td><td>Deep analysis, structured outputs, long-form strategy documents, prompt adherence</td><td>Discovery analysis, content strategy, email writing, lead magnet copy</td><td>Best at following complex instructions precisely. Produces structured, usable outputs every time.</td></tr>
       <tr><td><strong>ChatGPT</strong></td><td>Brainstorming, ideation, fast first drafts, social captions</td><td>Hook generation, caption batches, content ideas, quick rewrites</td><td>Faster iteration speed for high-volume content generation. Great for lists and variations.</td></tr>
-      <tr><td><strong>Perplexity</strong></td><td>Research, competitor analysis, industry data, real-time information</td><td>Before building strategy — understand the client's competitive landscape</td><td>Only AI tool that pulls current web data. Essential for market research before strategy work.</td></tr>
+      <tr><td><strong>Perplexity</strong></td><td>Research, competitor analysis, industry data, real-time information</td><td>Section 03 — after Discovery Analysis, before Authority Strategy</td><td>Only AI tool that pulls current web data. Essential for market research before strategy work.</td></tr>
     </tbody>
   </table>
 
-  <div class="label-copper">Master Analysis Prompts</div>
+  <div class="label-copper">Discovery Analysis Master Prompt</div>
 
   <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Positioning Analysis</div>
+    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Discovery Analysis Master Prompt · Run once. Never repeat.</div>
     <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">Act as a brand positioning strategist. Using the discovery analysis and all outputs already generated earlier in this same Claude conversation, analyze this client's positioning:
+    <div class="prompt-text">You are the lead marketing strategist for Daily Grind Media, a premium content production and authority-building agency based in San Diego.
 
-1. What is their current positioning (explicit or implied)?
-2. What are the 3 strongest differentiators they have that competitors likely cannot claim?
-3. What is the single most powerful positioning statement they could use?
-4. What stories from their background support this positioning?
-5. What are they saying that sounds like everyone else in their space?
+I have pasted a completed client discovery form above. Read it carefully. This is the only time this information will be entered. Every subsequent prompt in this conversation will build from the outputs you generate here — do not request any of this information again.
 
-Be direct. Point out what is weak. Suggest what to amplify.
+Produce the following outputs in this exact order. Be specific. No filler. No generic language.
 
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request discovery information again.</div>
-  </div>
+1. CLIENT SUMMARY
+3–5 sentences. Who this person is, what they do, who they serve, and why they hired DGM.
 
-  <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Audience Analysis</div>
-    <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">Using the discovery analysis and all outputs already generated earlier in this same Claude conversation, create a detailed audience profile:
+2. AUTHORITY POSITIONING
+How should this person be perceived in their market? Write their clearest one-sentence positioning statement. What space do they own that no competitor can claim?
 
-1. WHO THEY ARE: Demographics, profession, income, life stage
-2. WHAT THEY WANT: Primary desires and transformation sought
-3. WHAT THEY FEAR: Top 3 fears holding them back
-4. WHAT THEY BELIEVE: Common beliefs and misconceptions about this topic
-5. WHERE THEY ARE: Platforms they use, content they consume, communities they belong to
-6. LANGUAGE THEY USE: Exact phrases they would type into Google or say to a friend
+3. BRAND ANALYSIS
+Voice: 5 adjectives. Tone: formal / conversational / direct / warm (pick the fit). What they should NEVER sound like. Vocabulary they own. Vocabulary to avoid.
 
-This profile will be used to write podcast questions, lead magnet copy, and landing pages.
+4. AUDIENCE PROFILE
+Full breakdown: demographics, profession, income level, life stage. Psychographics: what they believe, what they fear, what they desire, how they make decisions. Write in the exact language their audience uses.
 
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request discovery information again.</div>
-  </div>
+5. PAIN POINTS
+Top 5 specific pains their audience experiences. Written in the exact words the audience would use — not clinical descriptions.
 
-  <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Perplexity — Competitor Analysis</div>
-    <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">Research the competitive landscape for [CLIENT NAME] who operates as [DESCRIBE THEIR BUSINESS] targeting [TARGET AUDIENCE].
+6. DESIRED OUTCOMES
+What their audience wants to achieve. Practical outcomes. Emotional outcomes. What success looks and feels like to them.
 
-Find:
-1. Top 5 competitors or similar voices in this space online
-2. What content they produce and what performs best
-3. What positioning gaps exist — what is NOT being said in this space
-4. What topics are oversaturated vs. underserved
-5. What social proof and authority markers the top players use
+7. AUDIENCE OBJECTIONS
+Top 5 objections their ideal client has before buying. For each: state the objection in prospect language, identify the root fear, write a 2-sentence reframe.
 
-Use current data from the web. Cite sources.</div>
-  </div>
+8. OFFER SUMMARY
+What they sell, who it's for, how it's delivered, what result it produces, and what makes it different from alternatives in the market.
 
-  <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Objection Analysis</div>
-    <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">Using all outputs already generated in this same Claude conversation — including the discovery analysis, audience profile, and positioning analysis — identify the top 7 objections the ideal client has before buying.
+9. DIFFERENTIATORS
+3–5 things this person can truthfully claim that direct competitors cannot. Evidence-based — not adjectives.
 
-For each objection:
-- State the objection in the exact language the prospect would use
-- Explain the root fear or belief behind it
-- Write a 2–3 sentence reframe that addresses it without being defensive
-- Suggest a podcast topic or content angle that would dissolve this objection over time
+10. CONTENT OPPORTUNITIES
+10 specific content topics with angles. For each, note why it resonates with this specific audience and what authority it builds.
 
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request discovery or offer information again.</div>
+11. LEAD MAGNET OPPORTUNITIES
+5 ideas. For each: title, format, and a specific reason it converts for this audience.
+
+12. POSITIONING GAPS
+2–3 things currently missing from their positioning that podcast content should directly address.
+
+13. STRATEGIC NOTES
+Anything else critical to this project that was not explicitly asked for.
+
+14. EPISODE ROADMAP
+First 6 podcast episode titles in priority order. For each, one sentence on what it accomplishes strategically for this client's authority.</div>
   </div>
   </div>
 </div>
 
 
 <!-- ACC: s4 -->
+
+
+<!-- ACC: s-research -->
+<div class="acc-section" id="s-research">
+  <div class="acc-header" onclick="toggleAcc('s-research')">
+    <div class="acc-left">
+      <div class="acc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <div class="acc-meta"><div class="acc-num">03</div><div class="acc-title">Perplexity Research</div><div class="acc-sub">Market intelligence — run in Perplexity, paste results back into Claude before Authority Strategy</div></div>
+    </div>
+    <div class="acc-right"><span class="acc-badge acc-badge-core">Research</span><div class="acc-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+  </div>
+  <div class="acc-body">
+    <div class="highlight">
+      <strong>Perplexity does not have access to your Claude conversation.</strong> This is the one section that crosses platforms. After running the research prompt in Perplexity, copy the full output and paste it back into Claude before running the Authority Strategy prompt. The research becomes the Market Intelligence Layer that sharpens everything in Section 04.
+    </div>
+
+    <div class="label-copper">How This Section Works</div>
+    <table class="dgm-table">
+      <thead><tr><th>Step</th><th>Action</th><th>Tool</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Complete Section 02 — Discovery Analysis in Claude</td><td>Claude</td></tr>
+        <tr><td>2</td><td>Copy the Client Summary, Authority Positioning, Offer Summary, and Industry from the Discovery Analysis output</td><td>Claude output</td></tr>
+        <tr><td>3</td><td>Open Perplexity. Paste the research prompt below. Fill in the 4 context fields.</td><td>Perplexity</td></tr>
+        <tr><td>4</td><td>Copy the full Perplexity research output</td><td>Perplexity output</td></tr>
+        <tr><td>5</td><td>Return to Claude. Paste the research and say: <em>"Here is the Perplexity Market Intelligence Report. Use it alongside the Discovery Analysis to build the Authority Strategy."</em></td><td>Claude</td></tr>
+        <tr><td>6</td><td>Run Section 04 — Authority Strategy</td><td>Claude</td></tr>
+      </tbody>
+    </table>
+
+    <div class="label-copper">Perplexity Research Prompt</div>
+
+    <div class="prompt-box">
+      <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Perplexity — Market Intelligence Research</div>
+      <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+      <div class="prompt-text">You are conducting market intelligence research for a DGM client. Perplexity does not have access to your Claude conversation — paste the key context fields below from the Discovery Analysis output.
+
+CLIENT CONTEXT
+(Copy from your Discovery Analysis output:)
+
+CLIENT SUMMARY: [paste]
+AUTHORITY POSITIONING: [paste]
+OFFER SUMMARY: [paste]
+INDUSTRY / NICHE: [paste]
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Research and deliver current, specific, actionable intelligence — not general industry overviews.
+
+1. COMPETITIVE LANDSCAPE
+Top 5–7 competitors or authority voices in this exact niche. For each: what they do, what content performs best for them, and where they are weakest.
+
+2. AUDIENCE LANGUAGE
+Exact phrases, questions, and complaints this audience uses online — Reddit, YouTube comments, Google searches, forums. What words do they use to describe their own problem?
+
+3. CONTENT GAPS
+What topics are being ignored or underserved by the top players? What questions is this audience asking that no one is answering well?
+
+4. POSITIONING OPPORTUNITIES
+What angles, claims, or authority positions are currently unoccupied in this space?
+
+5. SEARCH INTELLIGENCE
+Top search queries in this niche. Long-tail keyword opportunities. What is the audience actively searching for right now?
+
+6. AUTHORITY MARKERS
+What makes the top voices in this space credible? Certifications, media appearances, client results, content formats, publishing frequency.
+
+7. STRATEGIC SUMMARY
+In 3 sentences: the single biggest market opportunity for this client right now, and the fastest path to authority in this space.
+
+Use current web data. Cite sources. Be specific — this research will be pasted back into Claude and used directly by the Authority Strategy prompt.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+AFTER COMPLETING RESEARCH:
+Copy the full Perplexity output.
+Return to your Claude conversation.
+Paste it and say: "Here is the Perplexity Market Intelligence Report. Please use it alongside the Discovery Analysis to build the Authority Strategy."
+Then run Section 04 — Authority Strategy.</div>
+    </div>
+  </div>
+</div>
+
 <div class="acc-section" id="s4">
   <div class="acc-header" onclick="toggleAcc('s4')">
     <div class="acc-left">
       <div class="acc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
-      <div class="acc-meta"><div class="acc-num">04</div><div class="acc-title">Content Pillar System</div><div class="acc-sub">11 recurring content themes that make every episode strategic</div></div>
+      <div class="acc-meta"><div class="acc-num">04</div><div class="acc-title">Authority Strategy</div><div class="acc-sub">Merge Discovery Analysis and Market Intelligence into a unified Authority Strategy</div></div>
     </div>
     <div class="acc-right"><span class="acc-badge acc-badge-core">Core</span><div class="acc-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></div>
   </div>
   <div class="acc-body">
-    <p>Every podcast episode should map to one or more content pillars. Pillars ensure that over time, the client builds authority across every angle their audience cares about — while making our content planning fast and repeatable.</p>
+    <p>The Authority Strategy merges everything learned in the Discovery Analysis with the market intelligence from Perplexity Research. The result is a unified strategic blueprint — positioning, content pillars, audience language, lead magnets, and CTA strategy — grounded in both the client's expertise and current market evidence. Run this only after both the Discovery Analysis and Perplexity Research are complete.</p>
 
   <div class="pillar-grid">
     <div class="pillar-card"><div class="pillar-title">Education</div><div class="pillar-desc">Teach a specific concept, framework, or methodology. Builds credibility and authority.</div><div class="pillar-pills"><span class="pillar-pill">How-to reels</span><span class="pillar-pill">Blog tutorials</span><span class="pillar-pill">Email tips</span></div></div>
@@ -731,22 +812,86 @@ IMPORTANT: Use all outputs generated in previous sections of this same conversat
     <div class="pillar-card"><div class="pillar-title">Offer Awareness</div><div class="pillar-desc">Soft and direct content that makes the audience aware of what the client sells.</div><div class="pillar-pills"><span class="pillar-pill">CTA reels</span><span class="pillar-pill">Offer emails</span><span class="pillar-pill">Sales pages</span></div></div>
   </div>
 
-  <div class="label-copper">Content Pillar Mapping Prompt</div>
+  <div class="label-copper">Authority Strategy Master Prompt</div>
   <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Pillar Mapping from Discovery</div>
+    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Authority Strategy Master Prompt</div>
     <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">Using all outputs already generated in this same Claude conversation, map this client's content to the following pillars:
-Education · Client Success Stories · Mindset · Personal Journey · Industry Opinions · Nutrition · Training · Recovery · Longevity · Business · Offer Awareness
+    <div class="prompt-text">Using all outputs already generated in this same Claude conversation, build the complete Authority Strategy for this client.
 
-For each pillar that applies to this client:
-1. Give 3 specific episode topics within that pillar
-2. Give 2 specific reel concepts within that pillar
-3. Give 1 lead magnet idea within that pillar
-4. Give 1 email subject line within that pillar
+IMPORTANT: Use BOTH of the following as inputs:
 
-Skip pillars that don't apply to this client's niche.
+1. DISCOVERY ANALYSIS OUTPUT — the full analysis, positioning, audience profile, brand voice, content opportunities, and strategic notes generated from the discovery form.
 
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request discovery information again.</div>
+2. PERPLEXITY RESEARCH OUTPUT — the market intelligence report including competitive landscape, audience language, content gaps, positioning opportunities, and search intelligence.
+
+The Perplexity Research is not a standalone report. It is the Market Intelligence Layer that refines and sharpens everything discovered in the analysis phase.
+
+Use the research to:
+- Refine audience language so it matches how the market actually speaks
+- Refine positioning against real competitors, not assumptions
+- Identify competitor weaknesses this client can exploit
+- Identify authority opportunities that are currently unoccupied
+- Identify content gaps the client can fill immediately
+- Identify search opportunities with real audience demand
+- Strengthen content pillar selection with market evidence
+- Improve lead magnet recommendations based on what the audience is actively seeking
+- Improve CTA strategy based on how this audience makes decisions
+
+If the research contradicts assumptions made during Discovery Analysis, prioritize current market evidence.
+
+The goal is to merge Discovery Analysis and Market Intelligence into one unified Authority Strategy.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Produce the following outputs:
+
+1. AUTHORITY POSITIONING STATEMENT
+One paragraph (3–5 sentences). Who this person is, who they serve, what they help them achieve, and why they are the authority. This is the north star for all content.
+
+2. CORE MESSAGE
+One sentence. The single idea all content must reinforce.
+
+3. AUDIENCE BREAKDOWN
+Primary audience: who we speak to in 90% of content.
+Secondary audience: who is watching but not our primary target.
+Written in the audience's own language, informed by the research.
+
+4. CONTENT PILLARS
+8 content pillars for this client. For each:
+- Pillar name
+- 1-sentence strategic purpose
+- Why this pillar matters based on the market research
+- 3 specific episode topics within this pillar
+
+5. REEL OPPORTUNITIES
+8 specific reel concepts that would perform for this audience. For each: hook line, angle, and why it works based on what the research showed audiences respond to.
+
+6. BLOG & SEO OPPORTUNITIES
+5 article topics with SEO potential confirmed by the research. For each: title, target keyword, and 1-sentence angle.
+
+7. EMAIL OPPORTUNITIES
+5 subject lines that would get high open rates from this audience. For each: the subject, the emotional trigger, and the content angle.
+
+8. LEAD MAGNET OPPORTUNITIES
+3 lead magnets prioritized by conversion potential. For each: title, format, delivery mechanism, and why it converts for this specific audience based on what the research revealed they are searching for.
+
+9. CTA STRATEGY
+Primary CTA (what we always drive toward).
+Secondary CTA (nurture path for not-yet-ready prospects).
+Content-to-conversion ratio recommendation.
+Why this CTA approach works for this specific audience.
+
+10. STRATEGIC INTELLIGENCE SUMMARY
+This section bridges research and strategy. Generate:
+- BIGGEST AUDIENCE PAIN POINT: The single most urgent problem this audience needs solved right now
+- BIGGEST MARKET GAP: The most significant underserved opportunity in this space
+- STRONGEST POSITIONING OPPORTUNITY: The clearest available position no one else is occupying
+- FASTEST AUTHORITY PATH: The quickest route to becoming the recognized expert in this niche
+- HIGHEST-LEVERAGE CONTENT OPPORTUNITY: The one content type or topic that would generate the most authority momentum
+- MOST EFFECTIVE CTA STRATEGY: The specific offer, framing, and trigger that will convert this audience
+- BEST LEAD MAGNET OPPORTUNITY: The single lead magnet most likely to attract and convert the ideal client
+
+IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request discovery information or research data again — it already exists in this conversation.</div>
   </div>
   </div>
 </div>
@@ -762,7 +907,7 @@ IMPORTANT: Use all outputs generated in previous sections of this same conversat
     <div class="acc-right"><span class="acc-badge acc-badge-core">Core</span><div class="acc-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div></div>
   </div>
   <div class="acc-body">
-    <p>The podcast structure is not written to be a great interview. It is engineered to be a content extraction machine. Every segment is designed to produce hooks, clips, reels, stories, and authority moments.</p>
+    <p>The Podcast Structure prompt automatically determines the ideal Episode One using all prior conversation outputs — no episode topic required. Claude selects the highest-impact starting point from the Authority Strategy and builds the complete recording blueprint, including narrative arc, 9-part question framework, CTA placement, and producer notes.</p>
 
   <div class="label-copper">9-Part Interview Framework</div>
   <table class="dgm-table">
@@ -782,11 +927,40 @@ IMPORTANT: Use all outputs generated in previous sections of this same conversat
 
   <div class="label-copper">Podcast Structure Master Prompt</div>
   <div class="prompt-box">
-    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Custom Podcast Structure</div>
+    <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Podcast Structure (auto-determines Episode One from conversation context)</div>
     <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-    <div class="prompt-text">You are a podcast producer for Daily Grind Media. Using all outputs already generated in this same Claude conversation — including the discovery analysis, audience profile, positioning, content pillars, and offer details — create a custom podcast interview structure for this client.
+    <div class="prompt-text">You are a podcast producer for Daily Grind Media. Using all outputs already generated in this same Claude conversation — Discovery Analysis, Market Intelligence, Authority Strategy, Content Pillars, and Audience Profile — create the complete podcast recording blueprint for this client's first episode.
 
-Follow the DGM 9-part framework:
+Do not ask for an episode topic. Do not ask for the client name. Do not ask for the offer. All required information already exists in this conversation. Use the Strategic Intelligence Summary from the Authority Strategy to determine the ideal Episode One automatically.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1 — EPISODE SELECTION RATIONALE
+Explain in 2–3 sentences why this is the ideal Episode One for this client based on their positioning, audience, and the market intelligence. What makes this the right starting point?
+
+STEP 2 — EPISODE TITLES
+Three options. Audience-first. Compelling. SEO-aware.
+
+STEP 3 — EPISODE OBJECTIVE
+What this specific episode needs to accomplish strategically. Not just "introduce the client" — what authority position does it establish, what audience belief does it shift, what action does it drive?
+
+STEP 4 — CORE MESSAGE
+The single idea this episode must land by the end. Everything in the conversation should build toward this.
+
+STEP 5 — NARRATIVE ARC
+Map the emotional journey of the episode:
+- Where the audience starts (their current frustration or belief)
+- The turning point (the perspective shift this episode creates)
+- Where the audience lands (the hope, clarity, or motivation they leave with)
+
+STEP 6 — THE 9-PART RECORDING STRUCTURE
+Use the DGM framework. For each segment:
+- Primary question (conversational, not formal — write it exactly as Lo would say it)
+- 2 follow-up probes to go deeper
+- 1 story opportunity to actively listen for
+- 1 likely soundbite or hook moment to flag for editing
+
+Segments:
 1. Who You Help
 2. Origin Story
 3. Biggest Client Problems
@@ -797,17 +971,13 @@ Follow the DGM 9-part framework:
 8. Offer Positioning
 9. Closing Lesson
 
-For each segment provide:
-- The primary question (conversational, not formal)
-- 2 follow-up probes to go deeper
-- 1 story opportunity to look for
-- 1 likely soundbite or hook from this segment
+STEP 7 — CTA PLACEMENT
+Where and how the offer should be introduced naturally in the conversation. Exact language suggestion for the transition.
 
-Make every question feel like a natural conversation, not an interview checklist.
+STEP 8 — PRODUCER NOTES
+5 specific things to watch for during this session based on what we know about this client. What moments to flag, which stories to chase, which emotional beats to capture.
 
-Episode topic: [EPISODE TOPIC — only input needed]
-
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request the client profile again.</div>
+IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do not request any client information again.</div>
   </div>
 
   <div class="label-copper">Common Mistakes to Avoid</div>
@@ -887,30 +1057,79 @@ IMPORTANT: Use all outputs generated in previous sections of this same conversat
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Generates complete deployable HTML blueprint</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">Using all outputs already generated in this same Claude conversation — Discovery Analysis, Research Summary, Authority Strategy, Content Pillars, Podcast Structure, Offer Positioning, and Audience Analysis — generate a complete client-facing Podcast Authority Blueprint.
+      <div class="prompt-text">Using all outputs already generated in this same Claude conversation — Discovery Analysis, Research Summary, Authority Strategy, Content Pillars, Podcast Structure, Offer Positioning, Audience Analysis, Narrative Development, and Strategic Recommendations — generate a complete client-facing Podcast Authority Blueprint.
 
 Do not ask for discovery again.
+
 Do not ask for audience again.
+
 Do not ask for offer again.
+
 Do not ask for client profile again.
 
-Output a complete standalone HTML file. No external dependencies except Google Fonts. Deployable to Vercel. Output HTML only — no explanation, no preamble, no code fences.
+Do not ask for podcast structure again.
 
-The document is a premium pre-production blueprint delivered to the client before filming.
+All required information already exists in this conversation.
+
+Output a complete standalone HTML file.
+
+No external dependencies except Google Fonts.
+
+Deployable to Vercel.
+
+Output HTML only.
+
+No explanation.
+
+No preamble.
+
+No markdown.
+
+No code fences.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+OBJECTIVE
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Create a premium client-facing pre-production blueprint that demonstrates:
+
+* Authority positioning
+* Audience understanding
+* Podcast strategy
+* Episode structure
+* Content multiplication opportunities
+* Authority-building opportunities
+* Long-term growth opportunities
+
+This document should feel like a strategic asset rather than a podcast outline.
+
+The client should finish reading and immediately understand:
+
+Why this episode matters.
+
+Why this strategy matters.
+
+How this podcast becomes a business asset.
+
+How one recording session becomes a complete authority ecosystem.
 
 ━━━━━━━━━━━━━━━━━━━━━━━
 DGM BLUEPRINT DESIGN SYSTEM
 ━━━━━━━━━━━━━━━━━━━━━━━
 
-Apply this design system to the generated HTML only. Do not apply it to any other document.
+Apply this design system ONLY to the generated client-facing blueprint.
 
-FONTS (import from Google Fonts):
-- Bebas Neue — all headlines, section titles, large display numbers
-- Barlow Condensed 300/400/500/600 — eyebrows, labels, tags, navigation
-- Barlow 300/400/500 — all body copy, descriptions, paragraph text
-- Cormorant Garamond italic 300/400 — decorative numbers, pull quotes, accent elements
+Do not apply it anywhere else.
 
-COLOR VARIABLES:
+FONTS (Google Fonts)
+
+* Bebas Neue
+* Barlow Condensed 300/400/500/600
+* Barlow 300/400/500
+* Cormorant Garamond italic 300/400
+
+COLOR VARIABLES
+
 --black: #080808
 --card: #111111
 --border: #1E1E1E
@@ -921,109 +1140,390 @@ COLOR VARIABLES:
 --white: #F5F3F0
 --muted: #777777
 
-GRAIN TEXTURE: SVG noise at 3% opacity, position:fixed, z-index:1000, pointer-events:none, background-size:200px
+Include:
 
-LAYOUT: max-width:920px, centered, padding:0 32px. Sections: padding 100px 0.
+* SVG grain texture
+* Copper divider system
+* Premium editorial spacing
+* Reveal animations
+* Animated DGM brand lockup
+* Luxury dark aesthetic
+* High-end strategic presentation
 
-COPPER DIVIDER (full-width): 1px height, linear-gradient(90deg, transparent, #BB725A, transparent), opacity:0.4
-COPPER RULE (short): 48px wide, 1px, solid #BB725A, margin-bottom:32px
-
-EYEBROWS: Barlow Condensed 500, font-size:10px, letter-spacing:0.42em, text-transform:uppercase, color:#BB725A, margin-bottom:20px
-
-HEADINGS: Bebas Neue, letter-spacing:0.03em, line-height:0.95
-h1: clamp(52px, 8vw, 96px)
-h2: clamp(40px, 6vw, 72px)
-h3: clamp(28px, 4vw, 44px)
-
-BRAND HEADER (centered):
-- "DAILY GRIND MEDIA" in Bebas Neue, color:#BB725A, font-size:clamp(36px,6vw,64px), letter-spacing:0.22em
-- Copper gradient rule beneath brand name (full width, opacity 0.55)
-- Subtle radial copper glow behind brand: radial-gradient(ellipse, rgba(187,114,90,0.12), transparent 68%)
-- Animated glow: keyframes logoGlow, scale 0.96→1.04, opacity 0.5→1, 5s alternate
-
-CARDS (1px gap grid):
-- background:#111111, no border-radius, padding:40px 36px
-- Hover: background:#151515
-- Hover top edge: linear-gradient(90deg, transparent, #BB725A, transparent), opacity 0 → 1
-- Card number/index: Cormorant Garamond italic, font-size:28px, color:rgba(187,114,90,0.3)
-- Card title: Barlow Condensed 600, 13px, letter-spacing:0.12em, uppercase, #F5F3F0
-- Card body: Barlow 300, 14px, #777, line-height:1.7
-
-CARD GRID: display:grid, gap:1px, background:#1E1E1E, border:1px solid #1E1E1E
-
-REVEAL ANIMATIONS:
-- .reveal { opacity:0; transform:translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
-- .reveal.visible { opacity:1; transform:translateY(0); }
-- IntersectionObserver: threshold 0.12, rootMargin: '0px 0px -40px 0px'
-- On load: check if already in viewport and add .visible immediately
+Maintain the visual language established by the approved DGM Podcast Offer template.
 
 ━━━━━━━━━━━━━━━━━━━━━━━
-BLUEPRINT SECTIONS — INCLUDE ALL
+BLUEPRINT STRUCTURE
 ━━━━━━━━━━━━━━━━━━━━━━━
 
 1. HEADER
-Daily Grind Media brand lockup (centered, copper, animated glow).
-Below it: Client name + "Podcast Authority Blueprint" in large Bebas Neue.
-Below that: Prepared by Daily Grind Media · [Date].
+
+Daily Grind Media Brand Lockup
+
+Client Name
+
+Podcast Authority Blueprint
+
+Prepared by Daily Grind Media
+
+Current Date
+
+━━━━━━━━━━━━━━━━━━━━━━━
 
 2. EXECUTIVE SUMMARY
-3–5 sentences. What this blueprint covers and what the client should understand before reading it.
-One copper rule below.
+
+3–5 concise strategic paragraphs.
+
+Directly underneath add:
+
+STRATEGIC SNAPSHOT
+
+Create premium summary cards for:
+
+* Primary Objective
+* Desired Outcome
+* Target Audience
+* Core Message
+* Success Metric
+
+The client should understand the entire strategy within 30 seconds.
+
+━━━━━━━━━━━━━━━━━━━━━━━
 
 3. AUTHORITY POSITIONING
-The client's positioning statement. Their core message. Who they serve. Why they are the authority.
-Premium typographic treatment — large Bebas Neue for the positioning statement.
+
+Include:
+
+* Positioning Statement
+* Core Message
+* Unique Perspective
+* Authority Advantage
+* Differentiation
+
+The positioning statement should receive premium typographic treatment.
+
+━━━━━━━━━━━━━━━━━━━━━━━
 
 4. AUDIENCE BREAKDOWN
-Who the podcast speaks to. Demographics, psychographics, what they fear, what they desire.
-Use a 2-column card grid.
+
+Include:
+
+* Who They Are
+* What They Want
+* What They Fear
+* What They Believe
+* What They Need To Hear
+* Why This Podcast Matters To Them
+
+Use premium card layouts.
+
+━━━━━━━━━━━━━━━━━━━━━━━
 
 5. PODCAST STRATEGY
-The strategic direction for the podcast. Content pillars listed. Why this approach for this client.
 
-6. EPISODE BLUEPRINT
-The first episode plan. Episode title (3 options). Episode objective. Core message.
+Include:
 
-7. CONVERSATION FRAMEWORK
-The 9-part DGM structure for this client. Each segment with the primary question.
-Formatted as a numbered card grid.
+* Strategic Purpose
+* Content Pillars
+* Long-Term Vision
+* Authority Objectives
+* Why This Topic Is The Right Starting Point
 
-8. CONTENT EXPANSION MAP
-What one episode becomes. List all asset types. Show the multiplication.
-Use a 2-column grid of output types with copper dot indicators.
+━━━━━━━━━━━━━━━━━━━━━━━
 
-9. AUTHORITY GROWTH ROADMAP
-Episode 1 → Episode 6 roadmap. Each episode: title, strategic purpose, content focus.
-Formatted as a numbered flow with copper connector lines.
+6. EPISODE NARRATIVE ARC
 
-10. PRODUCTION DAY PREPARATION
-What the client needs to know before the shoot. Outfit guidance, mindset, what to expect.
-Practical and reassuring in tone.
+Create a strategic emotional journey.
 
-11. INCLUDED DELIVERABLES
-What the client receives after the session. List all deliverables clearly.
-Use a clean list with copper dots or a grid.
+Beginning
 
-12. NEXT STEPS
-3 clear next steps for the client after reading this blueprint.
+* Current frustration
+* Current problem
+* Existing beliefs
 
-13. FOOTER
-"Daily Grind Media" in Bebas Neue, copper.
-"Stay On That Daily Grind" in Barlow Condensed, muted.
-One copper rule above.
+Middle
+
+* Perspective shift
+* Lessons learned
+* Realizations
+
+End
+
+* Hope
+* Confidence
+* Action
+* Future vision
+
+Explain what the audience should feel at each stage.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+7. EPISODE BLUEPRINT
+
+Include:
+
+* Three Episode Title Options
+* Episode Objective
+* Core Message
+* Strategic Talking Points
+
+Add:
+
+WHY THIS EPISODE MATTERS
+
+Explain:
+
+* Why this is the ideal first episode
+* Why this creates trust
+* Why this establishes authority
+* How future episodes build from this foundation
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+8. CONVERSATION FRAMEWORK
+
+Use the upgraded DGM Story Framework.
+
+Display as interactive accordions.
+
+All accordions collapsed by default.
+
+Accordion styling must match the premium blueprint design.
+
+Sections:
+
+1. The Hook
+2. The Origin Story
+3. The Breaking Point
+4. The Turning Point
+5. The Lessons Learned
+6. The Framework
+7. The Success Stories
+8. The Future Vision
+9. The Final Message
+
+Inside each accordion include:
+
+* Purpose
+* Primary Question
+* Follow-Up Questions
+* Story Opportunities
+* Clip Opportunities
+* Producer Notes
+
+The framework should prioritize storytelling over information.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+9. CLIP OPPORTUNITY TARGETS
+
+New section.
+
+Show the moments being actively hunted during production.
+
+Categories:
+
+EMOTIONAL MOMENTS
+
+* Lowest point
+* Turning point
+* Breakthrough moments
+* Personal struggles
+
+CONTROVERSIAL OPINIONS
+
+* Industry myths
+* Contrarian viewpoints
+* Strong beliefs
+
+TEACHING MOMENTS
+
+* Frameworks
+* Processes
+* Step-by-step guidance
+
+IDENTITY MOMENTS
+
+* Philosophy
+* Core beliefs
+* Values
+
+CLIENT STORIES
+
+* Transformations
+* Wins
+* Results
+* Memorable examples
+
+Explain why each category matters for authority growth.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+10. CONTENT EXPANSION MAP
+
+Show how one episode multiplies.
+
+Include:
+
+* Reels
+* Shorts
+* YouTube
+* Blog Articles
+* Emails
+* LinkedIn Content
+* Lead Magnets
+* Landing Pages
+* Ad Creatives
+* Sales Assets
+
+Add:
+
+PRIMARY CONTENT EXTRACTION PRIORITIES
+
+Rank:
+
+1. Emotional Story Clips
+2. Identity Clips
+3. Teaching Clips
+4. Myth-Busting Clips
+5. CTA Clips
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+11. THE AUTHORITY FLYWHEEL
+
+Create a premium visual flywheel diagram.
+
+Stages:
+
+1. Podcast Recording
+2. Content Ecosystem
+3. Audience Growth
+4. Trust Building
+5. Lead Generation
+6. Client Success Stories
+7. New Podcast Content
+8. Authority Compounds
+
+Add a concise explanation:
+
+The goal is not simply to create content.
+
+The goal is to build a self-reinforcing authority engine where every episode creates the inputs for the next stage of growth.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+12. AUTHORITY GROWTH ROADMAP
+
+Episode 1 → Episode 6
+
+For each episode include:
+
+* Working Title
+* Strategic Purpose
+* Core Theme
+* Authority Objective
+
+Use a premium visual roadmap.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+13. PRODUCTION DAY PREPARATION
+
+Include:
+
+* Mindset
+* Wardrobe
+* Expectations
+* Recording Environment
+* Best Practices
+
+Tone should be reassuring and confidence-building.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+14. INCLUDED DELIVERABLES
+
+Clearly outline:
+
+* Podcast Deliverables
+* Content Deliverables
+* Strategic Deliverables
+
+Use premium card layouts.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+15. NEXT STEPS
+
+Three clear actions.
+
+Simple.
+
+Direct.
+
+Strategic.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+16. FOOTER
+
+Daily Grind Media
+
+Stay On That Daily Grind
+
+Copper divider above.
 
 ━━━━━━━━━━━━━━━━━━━━━━━
 TONE
 ━━━━━━━━━━━━━━━━━━━━━━━
-Premium. Strategic. Editorial. Confident without being corporate.
-This should feel like the most professional document the client has ever received from an agency.
-Every word earns its place. No filler. No generic language.
-The design system and the content should feel like one cohesive premium experience.
 
-This blueprint is universal — it must work for any client in any industry:
-business owners, coaches, consultants, real estate professionals, attorneys,
-financial professionals, executives, fitness professionals, entrepreneurs.
-Do not use fitness-specific, trainer-specific, or gym-specific language.</div>
+Premium.
+
+Strategic.
+
+Editorial.
+
+Confident.
+
+Sophisticated.
+
+Never corporate.
+
+Never generic.
+
+Never salesy.
+
+Never fluffy.
+
+Every section should feel intentional.
+
+Every section should feel valuable.
+
+The client should feel like they received a high-end strategic asset prepared specifically for them.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+MOBILE OPTIMIZATION
+━━━━━━━━━━━━━━━━━━━━━━━
+
+The HTML must be fully responsive and optimized for both desktop and mobile viewing.
+
+Mobile experience should be prioritized.
+
+Requirements:
+
+* Perfect readability on iPhone and Android devices
+* Single-column stacking where appropriate
+* Accordion framework optimized for touch interaction
+* Comfortable spacing for thumb scrolling
+* Responsive typography using clamp()
+* No horizontal scrolling
+* Flywheel diagram must adapt gracefully to mobile screens
+* Card grids must collapse cleanly on mobile
+* Maintain premium visual presentation on a 9:16 mobile viewport
+* Preserve luxury editorial feel on both desktop and mobile
+
+Design mobile-first while maintaining a premium desktop experience.</div>
     </div>
 
     <div class="label-copper">Common Mistakes to Avoid</div>
@@ -1081,59 +1581,41 @@ Do not use fitness-specific, trainer-specific, or gym-specific language.</div>
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Run at end of strategy session</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">Using all outputs generated in this conversation, create a condensed Project Master Summary for this client.
-
-This document will be used to:
-1. Brief new DGM team members on this client
-2. Restart any new Claude conversation instantly without re-running discovery
-3. Serve as the permanent project reference document
-
-Keep it under 600 words. Be specific. Eliminate anything that isn't essential.
-
-Format exactly as follows:
-
+      <div class="prompt-text">Using all outputs generated in this conversation, create a condensed Project Master Summary for this client, then render it as a branded PDF.
+PART 1 — CONTENT
+This document will be used to (1) brief new DGM team members on this client, (2) restart any new Claude conversation instantly without re-running discovery, and (3) serve as the permanent project reference document. Keep it under 600 words. Be specific. Eliminate anything that isn't essential. Format exactly as follows:
 ═══════════════════════════════════
 DGM PROJECT MASTER SUMMARY
 [CLIENT NAME] · [DATE]
 Generated by Daily Grind Media Podcast Authority System
 ═══════════════════════════════════
-
-CLIENT SUMMARY
-[2–3 sentences. Who they are, what they do, who they serve.]
-
-AUDIENCE SUMMARY
-[2–3 sentences. Exactly who we are speaking to and what they need to hear.]
-
-AUTHORITY POSITIONING
-[1 sentence. Their market position.]
-
-CORE MESSAGE
-[1 sentence. The single idea all content reinforces.]
-
-OFFER SUMMARY
-[2–3 sentences. What they sell and the result it produces.]
-
-CONTENT PILLARS
-[List all content pillars, one line each]
-
-PODCAST STRUCTURE SUMMARY
-[List all 9 segments with their primary question, one line each]
-
-CTA STRATEGY
-[2–3 sentences. Primary CTA, secondary CTA, conversion path.]
-
-STRATEGIC NOTES
-[Bullet points. Anything critical to know when working on this client.]
-
-KEY OPPORTUNITIES
-[Top 3 content or business opportunities identified for this client.]
-
-DGM RECOMMENDATIONS
-[Top 3 specific recommendations for this client's growth.]
-
+CLIENT SUMMARY            [2–3 sentences. Who they are, what they do, who they serve.]
+AUDIENCE SUMMARY          [2–3 sentences. Exactly who we speak to and what they need to hear.]
+AUTHORITY POSITIONING     [1 sentence. Their market position.]
+CORE MESSAGE              [1 sentence. The single idea all content reinforces.]
+OFFER SUMMARY             [2–3 sentences. What they sell and the result it produces.]
+CONTENT PILLARS           [List all pillars, one line each]
+PODCAST STRUCTURE SUMMARY [All 9 segments with primary question, one line each]
+CTA STRATEGY              [2–3 sentences. Primary CTA, secondary CTA, conversion path.]
+STRATEGIC NOTES           [Bullets. Anything critical when working on this client.]
+KEY OPPORTUNITIES         [Top 3 content/business opportunities.]
+DGM RECOMMENDATIONS       [Top 3 specific growth recommendations.]
 ═══════════════════════════════════
 TO RESUME: Paste this summary at the start of any new Claude conversation to continue work on this client without re-running discovery or analysis prompts.
-═══════════════════════════════════</div>
+═══════════════════════════════════
+PART 2 — RENDER AS A BRANDED PDF
+Build the summary as a print-optimized HTML file and render it to PDF using headless Chromium (page.pdf with prefer_css_page_size: true and print_background: true). Apply the DGM design system exactly:
+
+Page: US Letter, full-bleed black background (@page { margin: 0 }), ~0.55in interior padding, two pages max. Set print-color-adjust: exact so backgrounds render.
+Color variables: --black:#080808 · --card:#111111 · --border:#1E1E1E · --border-mid:#2A2A2A · --copper:#BB725A · --copper-light:#D4937D · --copper-dark:#8A4F3B · --white:#F5F3F0 · --muted:#888888.
+Typography: Use Bebas Neue (display/headlines/large numerals), Barlow Condensed (eyebrows, labels, tags, segment names), Barlow (body), and Cormorant Garamond italic (decorative numerals, accents, the podcast questions).
+Font handling (do not pause to ask): Attempt the real brand fonts first (embed from Google Fonts or uploaded files if available). If the environment has no network and no font files, automatically fall back to the closest local matches — condensed caps for Bebas Neue, a condensed serif italic for Cormorant Garamond, a clean sans for Barlow — and continue without stopping. Never ask me to choose between font options; just render, then note in one line which path was used.
+Masthead: centered "DAILY GRIND MEDIA" in copper Bebas Neue with a soft radial copper glow behind it, a "Podcast Authority System" condensed sub-label, a copper gradient rule, then the document title + client/date in Bebas, and a small generated-by line.
+Structural devices: copper eyebrows (≈9px, 0.34em letter-spacing, uppercase); full-width copper gradient dividers (linear-gradient(90deg,transparent,#BB725A,transparent), ~0.45 opacity); short 42px copper rules; subtle 3% SVG-noise grain overlay on each page.
+Components: content pillars as bordered inline tags with the three lead pillars outlined in copper; the 9 podcast segments as a numbered list with Cormorant-italic copper numerals, condensed bold segment names, and italic-serif questions, divided by hairline rows; strategic notes as copper-dot bullets with copper-highlighted key terms; opportunities and recommendations as copper numbered lists; a bordered "TO RESUME" callout with copper rules top and bottom; a closing "DAILY GRIND MEDIA / Stay On That Daily Grind" lockup.
+Page footers: small uppercase condensed line — "Daily Grind Media" (copper) · "[Client] · Master Summary" · page number (01 / 02).
+
+Tone of the artifact: premium, editorial, dark-luxury — the same high-end strategy-document feel as the HTML blueprint. After rendering, verify it's exactly two pages with no overflow, then deliver the PDF.</div>
     </div>
   </div>
 </div>
@@ -2425,42 +2907,103 @@ Additional goals or updates: [ONLY IF NEW INFORMATION]</div>
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Run first, paste discovery once, reference everywhere</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">You are a marketing strategist for Daily Grind Media. I am pasting a completed client discovery form. Analyze it and produce the following outputs. Every subsequent prompt in this conversation builds from what you generate here.
+      <div class="prompt-text">You are the lead marketing strategist for Daily Grind Media, a premium content production and authority-building agency based in San Diego.
 
-1. DISCOVERY SUMMARY (3–5 sentences — who they are, what they do, why they hired DGM)
-2. IDEAL CLIENT PROFILE (demographics, psychographics, pain points, desires, fears, transformation)
-3. CORE OFFER SUMMARY (what it is, who it's for, what result it produces, how it's delivered)
-4. AUTHORITY POSITIONING (how they should be perceived, their clearest positioning statement)
-5. BRAND ANALYSIS (voice 5 adjectives, tone, vocabulary to own, vocabulary to avoid)
-6. CONTENT OPPORTUNITIES (10 specific topics with angles, not just titles)
-7. LEAD MAGNET IDEAS (5 ideas — title, format, why it converts for this specific audience)
-8. PODCAST EPISODE ROADMAP (first 6 episode titles with 1-sentence strategic purpose each)
-9. POSITIONING GAPS (2–3 things missing that podcast content should address)
-10. STRATEGIC NOTES (anything else critical for this project)
+I have pasted a completed client discovery form above. Read it carefully. This is the only time this information will be entered. Every subsequent prompt in this conversation will build from the outputs you generate here — do not request any of this information again.
 
-Do not re-request this information in any subsequent prompt.
+Produce the following outputs in this exact order. Be specific. No filler. No generic language.
 
-[PASTE DISCOVERY FORM RESPONSES HERE]</div>
+1. CLIENT SUMMARY
+3–5 sentences. Who this person is, what they do, who they serve, and why they hired DGM.
+
+2. AUTHORITY POSITIONING
+How should this person be perceived in their market? Write their clearest one-sentence positioning statement. What space do they own that no competitor can claim?
+
+3. BRAND ANALYSIS
+Voice: 5 adjectives. Tone: formal / conversational / direct / warm (pick the fit). What they should NEVER sound like. Vocabulary they own. Vocabulary to avoid.
+
+4. AUDIENCE PROFILE
+Full breakdown: demographics, profession, income level, life stage. Psychographics: what they believe, what they fear, what they desire, how they make decisions. Write in the exact language their audience uses.
+
+5. PAIN POINTS
+Top 5 specific pains their audience experiences. Written in the exact words the audience would use — not clinical descriptions.
+
+6. DESIRED OUTCOMES
+What their audience wants to achieve. Practical outcomes. Emotional outcomes. What success looks and feels like to them.
+
+7. AUDIENCE OBJECTIONS
+Top 5 objections their ideal client has before buying. For each: state the objection in prospect language, identify the root fear, write a 2-sentence reframe.
+
+8. OFFER SUMMARY
+What they sell, who it's for, how it's delivered, what result it produces, and what makes it different from alternatives in the market.
+
+9. DIFFERENTIATORS
+3–5 things this person can truthfully claim that direct competitors cannot. Evidence-based — not adjectives.
+
+10. CONTENT OPPORTUNITIES
+10 specific content topics with angles. For each, note why it resonates with this specific audience and what authority it builds.
+
+11. LEAD MAGNET OPPORTUNITIES
+5 ideas. For each: title, format, and a specific reason it converts for this audience.
+
+12. POSITIONING GAPS
+2–3 things currently missing from their positioning that podcast content should directly address.
+
+13. STRATEGIC NOTES
+Anything else critical to this project that was not explicitly asked for.
+
+14. EPISODE ROADMAP
+First 6 podcast episode titles in priority order. For each, one sentence on what it accomplishes strategically for this client's authority.</div>
     </div>
 
-    <div class="label-copper">02 · Market Research</div>
+    <div class="label-copper">02 · Perplexity Research</div>
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Perplexity — Paste Client Summary from Section 02 output</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">Research the competitive landscape and market opportunity for the following client:
+      <div class="prompt-text">You are conducting market intelligence research for a DGM client. Perplexity does not have access to your Claude conversation — paste the key context fields below from the Discovery Analysis output.
 
-CLIENT SUMMARY: [Paste Discovery Summary from Section 02]
+CLIENT CONTEXT
+(Copy from your Discovery Analysis output:)
 
-Produce:
-1. COMPETITIVE LANDSCAPE — Top 5–7 competitors. What performs best. Where they are weakest.
-2. AUDIENCE LANGUAGE — Exact phrases and vocabulary this audience uses online.
-3. SEARCH BEHAVIOR — Top keywords and search queries. Long-tail opportunities.
-4. CONTENT GAPS — Topics underserved or missing from current market content.
-5. POSITIONING OPPORTUNITIES — Claims and angles being ignored by the top players.
-6. AUTHORITY OPPORTUNITIES — What establishes genuine authority fastest in this market.
-7. STRATEGIC SUMMARY — In 3 sentences, the single biggest opportunity right now.
+CLIENT SUMMARY: [paste]
+AUTHORITY POSITIONING: [paste]
+OFFER SUMMARY: [paste]
+INDUSTRY / NICHE: [paste]
 
-Use current data. Cite sources. Keep it strategic — intelligence, not a report.</div>
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Research and deliver current, specific, actionable intelligence — not general industry overviews.
+
+1. COMPETITIVE LANDSCAPE
+Top 5–7 competitors or authority voices in this exact niche. For each: what they do, what content performs best for them, and where they are weakest.
+
+2. AUDIENCE LANGUAGE
+Exact phrases, questions, and complaints this audience uses online — Reddit, YouTube comments, Google searches, forums. What words do they use to describe their own problem?
+
+3. CONTENT GAPS
+What topics are being ignored or underserved by the top players? What questions is this audience asking that no one is answering well?
+
+4. POSITIONING OPPORTUNITIES
+What angles, claims, or authority positions are currently unoccupied in this space?
+
+5. SEARCH INTELLIGENCE
+Top search queries in this niche. Long-tail keyword opportunities. What is the audience actively searching for right now?
+
+6. AUTHORITY MARKERS
+What makes the top voices in this space credible? Certifications, media appearances, client results, content formats, publishing frequency.
+
+7. STRATEGIC SUMMARY
+In 3 sentences: the single biggest market opportunity for this client right now, and the fastest path to authority in this space.
+
+Use current web data. Cite sources. Be specific — this research will be pasted back into Claude and used directly by the Authority Strategy prompt.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+AFTER COMPLETING RESEARCH:
+Copy the full Perplexity output.
+Return to your Claude conversation.
+Paste it and say: "Here is the Perplexity Market Intelligence Report. Please use it alongside the Discovery Analysis to build the Authority Strategy."
+Then run Section 04 — Authority Strategy.</div>
     </div>
 
     <div class="label-copper">03 · Authority Strategy</div>
@@ -2504,42 +3047,514 @@ Also provide: Episode title (3 options) · Episode objective · Core message · 
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Outputs complete standalone HTML file</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">Using all outputs already generated in this same Claude conversation, generate a complete client-facing Podcast Authority Blueprint as a standalone HTML file.
+      <div class="prompt-text">Using all outputs already generated in this same Claude conversation — Discovery Analysis, Research Summary, Authority Strategy, Content Pillars, Podcast Structure, Offer Positioning, Audience Analysis, Narrative Development, and Strategic Recommendations — generate a complete client-facing Podcast Authority Blueprint.
 
-IMPORTANT: Use all outputs generated in previous sections of this same conversation. Do NOT request: discovery information, client profile, audience information, offer information, positioning information, or podcast structure information.
+Do not ask for discovery again.
 
-Output HTML only — no explanation, no preamble, no code fences. Deployable to Vercel.
+Do not ask for audience again.
 
-DGM Design System (apply to blueprint only, not to this OS): Fonts — Bebas Neue (headlines), Barlow Condensed 300–600 (labels), Barlow 300–500 (body), Cormorant Garamond italic (accents). Colors — #080808 bg, #111111 cards, #1E1E1E border, #BB725A copper, #D4937D copper-light, #F5F3F0 white, #777 muted. Cards: no border-radius, hover reveals copper gradient top edge. 3% SVG grain overlay. IntersectionObserver reveal animations. 88–100px section padding.
+Do not ask for offer again.
 
-Sections: 1. Header (DGM brand lockup + client name) · 2. Executive Summary · 3. Authority Positioning · 4. Audience Breakdown · 5. Podcast Strategy · 6. Episode Blueprint · 7. Conversation Framework (9-part) · 8. Content Expansion Map · 9. Authority Growth Roadmap · 10. Production Day Preparation · 11. Included Deliverables · 12. Next Steps · 13. DGM Footer
+Do not ask for client profile again.
 
-Tone: Premium, strategic, editorial. Universal — works for any client in any industry. No fitness, trainer, or gym-specific language.</div>
+Do not ask for podcast structure again.
+
+All required information already exists in this conversation.
+
+Output a complete standalone HTML file.
+
+No external dependencies except Google Fonts.
+
+Deployable to Vercel.
+
+Output HTML only.
+
+No explanation.
+
+No preamble.
+
+No markdown.
+
+No code fences.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+OBJECTIVE
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Create a premium client-facing pre-production blueprint that demonstrates:
+
+* Authority positioning
+* Audience understanding
+* Podcast strategy
+* Episode structure
+* Content multiplication opportunities
+* Authority-building opportunities
+* Long-term growth opportunities
+
+This document should feel like a strategic asset rather than a podcast outline.
+
+The client should finish reading and immediately understand:
+
+Why this episode matters.
+
+Why this strategy matters.
+
+How this podcast becomes a business asset.
+
+How one recording session becomes a complete authority ecosystem.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+DGM BLUEPRINT DESIGN SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Apply this design system ONLY to the generated client-facing blueprint.
+
+Do not apply it anywhere else.
+
+FONTS (Google Fonts)
+
+* Bebas Neue
+* Barlow Condensed 300/400/500/600
+* Barlow 300/400/500
+* Cormorant Garamond italic 300/400
+
+COLOR VARIABLES
+
+--black: #080808
+--card: #111111
+--border: #1E1E1E
+--border-mid: #2A2A2A
+--copper: #BB725A
+--copper-light: #D4937D
+--copper-dark: #8A4F3B
+--white: #F5F3F0
+--muted: #777777
+
+Include:
+
+* SVG grain texture
+* Copper divider system
+* Premium editorial spacing
+* Reveal animations
+* Animated DGM brand lockup
+* Luxury dark aesthetic
+* High-end strategic presentation
+
+Maintain the visual language established by the approved DGM Podcast Offer template.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+BLUEPRINT STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━
+
+1. HEADER
+
+Daily Grind Media Brand Lockup
+
+Client Name
+
+Podcast Authority Blueprint
+
+Prepared by Daily Grind Media
+
+Current Date
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+2. EXECUTIVE SUMMARY
+
+3–5 concise strategic paragraphs.
+
+Directly underneath add:
+
+STRATEGIC SNAPSHOT
+
+Create premium summary cards for:
+
+* Primary Objective
+* Desired Outcome
+* Target Audience
+* Core Message
+* Success Metric
+
+The client should understand the entire strategy within 30 seconds.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+3. AUTHORITY POSITIONING
+
+Include:
+
+* Positioning Statement
+* Core Message
+* Unique Perspective
+* Authority Advantage
+* Differentiation
+
+The positioning statement should receive premium typographic treatment.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+4. AUDIENCE BREAKDOWN
+
+Include:
+
+* Who They Are
+* What They Want
+* What They Fear
+* What They Believe
+* What They Need To Hear
+* Why This Podcast Matters To Them
+
+Use premium card layouts.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+5. PODCAST STRATEGY
+
+Include:
+
+* Strategic Purpose
+* Content Pillars
+* Long-Term Vision
+* Authority Objectives
+* Why This Topic Is The Right Starting Point
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+6. EPISODE NARRATIVE ARC
+
+Create a strategic emotional journey.
+
+Beginning
+
+* Current frustration
+* Current problem
+* Existing beliefs
+
+Middle
+
+* Perspective shift
+* Lessons learned
+* Realizations
+
+End
+
+* Hope
+* Confidence
+* Action
+* Future vision
+
+Explain what the audience should feel at each stage.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+7. EPISODE BLUEPRINT
+
+Include:
+
+* Three Episode Title Options
+* Episode Objective
+* Core Message
+* Strategic Talking Points
+
+Add:
+
+WHY THIS EPISODE MATTERS
+
+Explain:
+
+* Why this is the ideal first episode
+* Why this creates trust
+* Why this establishes authority
+* How future episodes build from this foundation
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+8. CONVERSATION FRAMEWORK
+
+Use the upgraded DGM Story Framework.
+
+Display as interactive accordions.
+
+All accordions collapsed by default.
+
+Accordion styling must match the premium blueprint design.
+
+Sections:
+
+1. The Hook
+2. The Origin Story
+3. The Breaking Point
+4. The Turning Point
+5. The Lessons Learned
+6. The Framework
+7. The Success Stories
+8. The Future Vision
+9. The Final Message
+
+Inside each accordion include:
+
+* Purpose
+* Primary Question
+* Follow-Up Questions
+* Story Opportunities
+* Clip Opportunities
+* Producer Notes
+
+The framework should prioritize storytelling over information.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+9. CLIP OPPORTUNITY TARGETS
+
+New section.
+
+Show the moments being actively hunted during production.
+
+Categories:
+
+EMOTIONAL MOMENTS
+
+* Lowest point
+* Turning point
+* Breakthrough moments
+* Personal struggles
+
+CONTROVERSIAL OPINIONS
+
+* Industry myths
+* Contrarian viewpoints
+* Strong beliefs
+
+TEACHING MOMENTS
+
+* Frameworks
+* Processes
+* Step-by-step guidance
+
+IDENTITY MOMENTS
+
+* Philosophy
+* Core beliefs
+* Values
+
+CLIENT STORIES
+
+* Transformations
+* Wins
+* Results
+* Memorable examples
+
+Explain why each category matters for authority growth.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+10. CONTENT EXPANSION MAP
+
+Show how one episode multiplies.
+
+Include:
+
+* Reels
+* Shorts
+* YouTube
+* Blog Articles
+* Emails
+* LinkedIn Content
+* Lead Magnets
+* Landing Pages
+* Ad Creatives
+* Sales Assets
+
+Add:
+
+PRIMARY CONTENT EXTRACTION PRIORITIES
+
+Rank:
+
+1. Emotional Story Clips
+2. Identity Clips
+3. Teaching Clips
+4. Myth-Busting Clips
+5. CTA Clips
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+11. THE AUTHORITY FLYWHEEL
+
+Create a premium visual flywheel diagram.
+
+Stages:
+
+1. Podcast Recording
+2. Content Ecosystem
+3. Audience Growth
+4. Trust Building
+5. Lead Generation
+6. Client Success Stories
+7. New Podcast Content
+8. Authority Compounds
+
+Add a concise explanation:
+
+The goal is not simply to create content.
+
+The goal is to build a self-reinforcing authority engine where every episode creates the inputs for the next stage of growth.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+12. AUTHORITY GROWTH ROADMAP
+
+Episode 1 → Episode 6
+
+For each episode include:
+
+* Working Title
+* Strategic Purpose
+* Core Theme
+* Authority Objective
+
+Use a premium visual roadmap.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+13. PRODUCTION DAY PREPARATION
+
+Include:
+
+* Mindset
+* Wardrobe
+* Expectations
+* Recording Environment
+* Best Practices
+
+Tone should be reassuring and confidence-building.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+14. INCLUDED DELIVERABLES
+
+Clearly outline:
+
+* Podcast Deliverables
+* Content Deliverables
+* Strategic Deliverables
+
+Use premium card layouts.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+15. NEXT STEPS
+
+Three clear actions.
+
+Simple.
+
+Direct.
+
+Strategic.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+16. FOOTER
+
+Daily Grind Media
+
+Stay On That Daily Grind
+
+Copper divider above.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+TONE
+━━━━━━━━━━━━━━━━━━━━━━━
+
+Premium.
+
+Strategic.
+
+Editorial.
+
+Confident.
+
+Sophisticated.
+
+Never corporate.
+
+Never generic.
+
+Never salesy.
+
+Never fluffy.
+
+Every section should feel intentional.
+
+Every section should feel valuable.
+
+The client should feel like they received a high-end strategic asset prepared specifically for them.
+
+━━━━━━━━━━━━━━━━━━━━━━━
+MOBILE OPTIMIZATION
+━━━━━━━━━━━━━━━━━━━━━━━
+
+The HTML must be fully responsive and optimized for both desktop and mobile viewing.
+
+Mobile experience should be prioritized.
+
+Requirements:
+
+* Perfect readability on iPhone and Android devices
+* Single-column stacking where appropriate
+* Accordion framework optimized for touch interaction
+* Comfortable spacing for thumb scrolling
+* Responsive typography using clamp()
+* No horizontal scrolling
+* Flywheel diagram must adapt gracefully to mobile screens
+* Card grids must collapse cleanly on mobile
+* Maintain premium visual presentation on a 9:16 mobile viewport
+* Preserve luxury editorial feel on both desktop and mobile
+
+Design mobile-first while maintaining a premium desktop experience.</div>
     </div>
 
     <div class="label-copper">06 · Project Master Summary</div>
     <div class="prompt-box">
       <div class="prompt-box-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Claude — Run at end of strategy session, save permanently</div>
       <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-      <div class="prompt-text">Using all outputs generated throughout this conversation, create a concise Project Master Summary under 600 words.
+      <div class="prompt-text">Using all outputs generated in this conversation, create a condensed Project Master Summary for this client, then render it as a branded PDF.
+PART 1 — CONTENT
+This document will be used to (1) brief new DGM team members on this client, (2) restart any new Claude conversation instantly without re-running discovery, and (3) serve as the permanent project reference document. Keep it under 600 words. Be specific. Eliminate anything that isn't essential. Format exactly as follows:
+═══════════════════════════════════
+DGM PROJECT MASTER SUMMARY
+[CLIENT NAME] · [DATE]
+Generated by Daily Grind Media Podcast Authority System
+═══════════════════════════════════
+CLIENT SUMMARY            [2–3 sentences. Who they are, what they do, who they serve.]
+AUDIENCE SUMMARY          [2–3 sentences. Exactly who we speak to and what they need to hear.]
+AUTHORITY POSITIONING     [1 sentence. Their market position.]
+CORE MESSAGE              [1 sentence. The single idea all content reinforces.]
+OFFER SUMMARY             [2–3 sentences. What they sell and the result it produces.]
+CONTENT PILLARS           [List all pillars, one line each]
+PODCAST STRUCTURE SUMMARY [All 9 segments with primary question, one line each]
+CTA STRATEGY              [2–3 sentences. Primary CTA, secondary CTA, conversion path.]
+STRATEGIC NOTES           [Bullets. Anything critical when working on this client.]
+KEY OPPORTUNITIES         [Top 3 content/business opportunities.]
+DGM RECOMMENDATIONS       [Top 3 specific growth recommendations.]
+═══════════════════════════════════
+TO RESUME: Paste this summary at the start of any new Claude conversation to continue work on this client without re-running discovery or analysis prompts.
+═══════════════════════════════════
+PART 2 — RENDER AS A BRANDED PDF
+Build the summary as a print-optimized HTML file and render it to PDF using headless Chromium (page.pdf with prefer_css_page_size: true and print_background: true). Apply the DGM design system exactly:
 
-IMPORTANT: Use all outputs generated in this same conversation.
+Page: US Letter, full-bleed black background (@page { margin: 0 }), ~0.55in interior padding, two pages max. Set print-color-adjust: exact so backgrounds render.
+Color variables: --black:#080808 · --card:#111111 · --border:#1E1E1E · --border-mid:#2A2A2A · --copper:#BB725A · --copper-light:#D4937D · --copper-dark:#8A4F3B · --white:#F5F3F0 · --muted:#888888.
+Typography: Use Bebas Neue (display/headlines/large numerals), Barlow Condensed (eyebrows, labels, tags, segment names), Barlow (body), and Cormorant Garamond italic (decorative numerals, accents, the podcast questions).
+Font handling (do not pause to ask): Attempt the real brand fonts first (embed from Google Fonts or uploaded files if available). If the environment has no network and no font files, automatically fall back to the closest local matches — condensed caps for Bebas Neue, a condensed serif italic for Cormorant Garamond, a clean sans for Barlow — and continue without stopping. Never ask me to choose between font options; just render, then note in one line which path was used.
+Masthead: centered "DAILY GRIND MEDIA" in copper Bebas Neue with a soft radial copper glow behind it, a "Podcast Authority System" condensed sub-label, a copper gradient rule, then the document title + client/date in Bebas, and a small generated-by line.
+Structural devices: copper eyebrows (≈9px, 0.34em letter-spacing, uppercase); full-width copper gradient dividers (linear-gradient(90deg,transparent,#BB725A,transparent), ~0.45 opacity); short 42px copper rules; subtle 3% SVG-noise grain overlay on each page.
+Components: content pillars as bordered inline tags with the three lead pillars outlined in copper; the 9 podcast segments as a numbered list with Cormorant-italic copper numerals, condensed bold segment names, and italic-serif questions, divided by hairline rows; strategic notes as copper-dot bullets with copper-highlighted key terms; opportunities and recommendations as copper numbered lists; a bordered "TO RESUME" callout with copper rules top and bottom; a closing "DAILY GRIND MEDIA / Stay On That Daily Grind" lockup.
+Page footers: small uppercase condensed line — "Daily Grind Media" (copper) · "[Client] · Master Summary" · page number (01 / 02).
 
-Include:
-1. CLIENT OVERVIEW (2–3 sentences)
-2. AUDIENCE SUMMARY (2–3 sentences)
-3. AUTHORITY POSITIONING (1 sentence)
-4. CORE MESSAGE (1 sentence)
-5. OFFER SUMMARY (2–3 sentences)
-6. CONTENT PILLARS (all pillars, one line each)
-7. PODCAST STRATEGY (2–3 sentences)
-8. EPISODE STRUCTURE SUMMARY (all 9 segments with primary question, one line each)
-9. CTA STRATEGY (2–3 sentences)
-10. STRATEGIC NOTES (bullet points)
-11. KEY OPPORTUNITIES (top 3)
-12. DGM RECOMMENDATIONS (top 3 for this client's growth)
-
-End with: "To resume this project in a new Claude conversation, paste this summary as the first message."</div>
+Tone of the artifact: premium, editorial, dark-luxury — the same high-end strategy-document feel as the HTML blueprint. After rendering, verify it's exactly two pages with no overflow, then deliver the PDF.</div>
     </div>
 
     <div class="label-silver" style="margin-top:24px;">07–09 · Post-Production Prompts (run after recording)</div>
